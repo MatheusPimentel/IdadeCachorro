@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="matheuspimentel.androidstudio.com.idadedecachorro.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        app:srcCompat="@drawable/cachorro" />
+
+    <EditText
+        android:id="@+id/idade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="Digite a idade do seu cachorro para descobrir a idade dele em anos humanos"
+        android:textColor="@android:color/background_light"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/descobrirIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Descobrir idade" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp" />
+</RelativeLayout>
